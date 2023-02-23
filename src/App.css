@@ -1,0 +1,51 @@
+.App{
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.search-form{
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 3%;
+}
+
+.search-bar{
+  width: 50%;
+  border: none;
+  padding: 10px;
+}
+
+.search-button{
+  background-color: lightcoral;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+.search-button:hover{
+  background-color: rgb(231, 111, 111);
+}
+
+.recipes{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.food-label{
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+@media only screen and (max-width: 580px) {
+  .search-form{
+    gap: 1em;
+    margin-bottom: 3em;
+    flex-direction: column;
+  }
+  .search-form label{
+    margin-top: 2em;
+  }
+}
